@@ -1,13 +1,19 @@
 public class Wheels implements CarPart {
     // Leaf
+    double weight;
+    String name = "Rodas";
+
+    public Wheels(double weight) {
+        this.weight = weight;
+    }
+
     @Override
     public double getWeight() {
-        double weight = 20;
         return weight;
     }
 
     @Override
     public String getName() {
-        return "Rodas";
+        return name;
     }
 }

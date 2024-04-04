@@ -1,4 +1,4 @@
-public class Suspension implements CarPart {
+public class Trunk implements CarPart {
     // Leaf
     @Override
     public double getWeight() {
@@ -8,6 +8,6 @@ public class Suspension implements CarPart {
 
     @Override
     public String getName() {
-        return "Suspensão";
+        return "Porta-malas";
     }
 }

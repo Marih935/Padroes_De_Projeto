@@ -1,13 +1,19 @@
 public class Engine implements CarPart {
     // Leaf
+    double weight;
+    String name = "Motor";
+
+    public Engine(double weight) {
+        this.weight = weight;
+    }
+
     @Override
     public double getWeight() {
-        double weight = 100;
         return weight;
     }
 
     @Override
     public String getName() {
-        return "Engine";
+        return name;
     }
 }
