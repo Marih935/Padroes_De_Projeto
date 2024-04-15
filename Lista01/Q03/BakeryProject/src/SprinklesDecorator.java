@@ -1,5 +1,5 @@
 public class SprinklesDecorator extends Cake {
-    private final Cake cake;
+    private Cake cake;
 
     public SprinklesDecorator(Cake cake) {
         this.cake = cake;
