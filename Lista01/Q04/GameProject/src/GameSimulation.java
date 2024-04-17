@@ -1,15 +1,16 @@
 public class GameSimulation {
     public static void main(String[] args) {
-        Location amazonLocation = new AmazonLocation();
-        Enemy amazonEnemy = amazonLocation.createEnemy();
+        EnemyFactory amazonFactory = new AmazonEnemyFactory();
+        Enemy amazonEnemy = amazonFactory.createEnemy();
         amazonEnemy.attack();
 
-        Location sertaoLocation = new SertaoLocation();
-        Enemy sertaoEnemy = sertaoLocation.createEnemy();
+        EnemyFactory sertaoFactory = new SertaoEnemyFactory();
+        Enemy sertaoEnemy = sertaoFactory.createEnemy();
         sertaoEnemy.attack();
+        
+        EnemyFactory rioFactory = new RioEnemyFactory();
+        Enemy rioEnemy = rioFactory.createEnemy();
+        rioEnemy.attack();
 
-        Location rioDeJaneiroLocation = new RioDeJaneiroLocation();
-        Enemy rioDeJaneiroEnemy = rioDeJaneiroLocation.createEnemy();
-        rioDeJaneiroEnemy.attack();
     }
 }
