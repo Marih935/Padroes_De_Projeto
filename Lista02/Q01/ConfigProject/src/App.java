@@ -4,7 +4,7 @@ public class App {
         config.printAllConfig();
 
         String search = config.get("DLCName");
-        System.out.println("Searching in Config.txt...");
+        System.out.println("\nSearching in Config.txt...");
         System.out.println("DLCName: " + search);
     }
 }

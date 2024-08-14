@@ -1,12 +1,12 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 public class Config {
     private static Config instance;
-    private Map<String, String> configData = new HashMap<>();
+    private Map<String, String> configData = new LinkedHashMap<>();
 
     private Config() {
         loadConfig();
